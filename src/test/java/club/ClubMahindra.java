@@ -1,4 +1,4 @@
-package club;
+ package club;
 
 import java.time.Duration;
 

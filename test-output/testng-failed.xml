@@ -8,6 +8,7 @@
           <include name="comparing"/>
           <include name="compares"/>
           <include name="drop"/>
+          <include name="a"/>
         </methods>
       </class> <!-- club.Compare -->
     </classes>

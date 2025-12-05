@@ -12,6 +12,7 @@ public class Compare extends  SEtup {
 	Amzon jay;
 	Flipkart jay1;
 	public static String amzoniphone;
+
 	public static String flipkartiphone;
 
 	@BeforeMethod
@@ -23,15 +24,17 @@ public class Compare extends  SEtup {
 	@Test(priority=2)
 	public void drop() {
 		driver.get("https://www.amazon.in/");
-		driver.findElement(By.xpath("//button[@type='submit']")).click();
+//		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		jay.iphonessss();
 		jay.phonesd();
 		amzoniphone=driver.findElement(By.xpath("(//span[text()='60,000'])[5]")).getText().replace(",", "");
-		System.out.println("amzon: "+amzoniphone );
+		
+		System.out.println( "amzon:"+amzoniphone);
+		
 
 	}
 	@Test(priority=1)
-	public void ammm() {
+	public void a() {
 		driver.get("https://www.flipkart.com/");
 		jay1.iphone();
 		jay1.phone();
@@ -42,11 +45,11 @@ public class Compare extends  SEtup {
 	@Test(priority=3)
 	public void comparing() {
 
-		int num1=Integer.parseInt(amzoniphone);
+		int jay=Integer.parseInt(amzoniphone);
 		int num2=Integer.parseInt(flipkartiphone);
 
-		if(num1<num2) {System.out.println("amazon price is less");}
-		else if(num1>num2) {System.out.println("flipkart price is less");}
+		if(jay<num2) {System.out.println("amazon price is less");}
+		else if(jay>num2) {System.out.println("flipkart price is less");}
 		else {System.out.println("not");}
 	}
 }

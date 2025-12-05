@@ -9,6 +9,8 @@ import org.openqa.selenium.support.PageFactory;
 import BASE.SEtup;
 
 public class Amzon extends SEtup {
+	
+	
 	public  Amzon(WebDriver driver) {
 
 		PageFactory.initElements(driver, this);
